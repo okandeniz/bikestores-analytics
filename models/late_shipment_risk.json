@@ -1,0 +1,82 @@
+{
+    "model_name": "Tuned Logistic Regression",
+    "target": "is_late",
+    "threshold": 0.2,
+    "hyperparameters": {
+        "C": 0.01,
+        "l1_ratio": 0.0,
+        "class_weight": null
+    },
+    "features": [
+        "store_id",
+        "staff_id",
+        "order_month_number",
+        "order_dayofweek",
+        "required_lead_days",
+        "distinct_products",
+        "total_units",
+        "net_order_value",
+        "effective_discount_pct"
+    ],
+    "reference_data": {
+        "stores": [
+            {
+                "store_id": 1,
+                "store_name": "Santa Cruz Bikes"
+            },
+            {
+                "store_id": 2,
+                "store_name": "Baldwin Bikes"
+            },
+            {
+                "store_id": 3,
+                "store_name": "Rowlett Bikes"
+            }
+        ],
+        "staff": [
+            {
+                "staff_id": 2,
+                "staff_name": "Mireya Copeland",
+                "store_id": 1
+            },
+            {
+                "staff_id": 3,
+                "staff_name": "Genna Serrano",
+                "store_id": 1
+            },
+            {
+                "staff_id": 6,
+                "staff_name": "Marcelene Boyer",
+                "store_id": 2
+            },
+            {
+                "staff_id": 7,
+                "staff_name": "Venita Daniel",
+                "store_id": 2
+            },
+            {
+                "staff_id": 8,
+                "staff_name": "Kali Vargas",
+                "store_id": 3
+            },
+            {
+                "staff_id": 9,
+                "staff_name": "Layla Terrell",
+                "store_id": 3
+            }
+        ]
+    },
+    "training_rows": 1445,
+    "training_start": "2016-01-01",
+    "training_end": "2018-03-31",
+    "training_late_rate": 0.3169550173010381,
+    "evaluation": {
+        "test_period": "2018-01-01 to 2018-03-31",
+        "roc_auc": 0.8,
+        "pr_auc": 0.559,
+        "precision": 0.448,
+        "recall": 1.0,
+        "f1": 0.619,
+        "f2": 0.802
+    }
+}

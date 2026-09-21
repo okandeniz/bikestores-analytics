@@ -1,0 +1,190 @@
+:root { color-scheme: light; }
+
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+  background: #f4f7fc;
+  color: #172842;
+}
+
+[data-testid="stHeader"] { background: rgba(244, 247, 252, 0.94); }
+.block-container { max-width: 1400px; padding-top: 3.5rem; padding-bottom: 3rem; }
+h1 { color: #10213d; font-weight: 750; letter-spacing: -0.035em; }
+h2, h3 { color: #19304f; letter-spacing: -0.02em; }
+p, label, [data-testid="stCaptionContainer"] { color: #53647d; }
+
+/* Light navigation panel */
+[data-testid="stSidebar"] {
+  background: #eaf0f9;
+  border-right: 1px solid #d2ddeb;
+}
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] { color: #243955; }
+[data-testid="stSidebar"] hr { border-color: #c8d5e6; }
+[data-testid="stSidebar"] [data-baseweb="select"] > div {
+  background: #ffffff;
+  border-color: #bdcbe0;
+  color: #172842;
+}
+[data-testid="stSidebar"] [data-baseweb="select"] span,
+[data-testid="stSidebar"] [data-baseweb="select"] svg {
+  color: #172842;
+  fill: #172842;
+}
+[data-testid="stSidebar"] [data-testid="stForm"] {
+  padding: 0.95rem;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid #c6d3e5;
+  border-radius: 12px;
+}
+[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button,
+[data-testid="stSidebar"] button[kind="primary"] {
+  background: #2e66c9;
+  border-color: #2e66c9;
+  color: #ffffff !important;
+}
+[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button p,
+[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] button span,
+[data-testid="stSidebar"] button[kind="primary"] p,
+[data-testid="stSidebar"] button[kind="primary"] span {
+  color: #ffffff !important;
+}
+
+/* White cards separate key numbers from the soft page background. */
+[data-testid="stMetric"] {
+  min-height: 130px;
+  padding: 1.15rem 1.2rem;
+  background: #ffffff;
+  border: 1px solid #d8e1ee;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(33, 58, 94, 0.05);
+}
+[data-testid="stMetricLabel"] { color: #5b6d86; font-size: 0.9rem; }
+[data-testid="stMetricValue"] { color: #10213d; font-weight: 700; }
+[data-testid="stTabs"] [data-baseweb="tab-list"] {
+  gap: 1.5rem;
+  border-bottom-color: #cfdaea;
+}
+[data-testid="stTabs"] [data-baseweb="tab"] {
+  padding: 0.65rem 0;
+  color: #485c78;
+  font-size: 1rem;
+}
+[data-testid="stTabs"] [aria-selected="true"] {
+  color: #245db8;
+  font-weight: 700;
+}
+[data-testid="stForm"] {
+  margin: 0.7rem 0 1.2rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #d8e1ee;
+  border-radius: 12px;
+}
+[data-testid="stButton"] button[kind="primary"],
+[data-testid="stFormSubmitButton"] button[kind="primary"],
+[data-testid="stFormSubmitButton"] button[kind="primaryFormSubmit"] {
+  background: #2e66c9;
+  border-color: #2e66c9;
+  color: #ffffff !important;
+}
+[data-testid="stButton"] button[kind="primary"] p,
+[data-testid="stButton"] button[kind="primary"] span,
+[data-testid="stFormSubmitButton"] button[kind="primary"] p,
+[data-testid="stFormSubmitButton"] button[kind="primary"] span,
+[data-testid="stFormSubmitButton"] button[kind="primaryFormSubmit"] * {
+  color: #ffffff !important;
+  font-weight: 650;
+}
+[data-testid="stButton"] button[kind="primary"]:hover,
+[data-testid="stFormSubmitButton"] button[kind="primary"]:hover,
+[data-testid="stFormSubmitButton"] button[kind="primaryFormSubmit"]:hover {
+  background: #2457ad;
+  border-color: #2457ad;
+}
+[data-testid="stButton"] button[kind="primary"]:focus-visible,
+[data-testid="stFormSubmitButton"] button[kind="primary"]:focus-visible,
+[data-testid="stFormSubmitButton"] button[kind="primaryFormSubmit"]:focus-visible {
+  outline: 3px solid rgba(46, 102, 201, 0.25);
+  outline-offset: 2px;
+}
+[data-testid="stDataFrame"],
+[data-testid="stPlotlyChart"] {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dce5f0;
+  border-radius: 12px;
+}
+.eyebrow {
+  display: block;
+  min-height: 1.5rem;
+  margin: 0 0 0.35rem;
+  padding-top: 0.2rem;
+  color: #2e66c9;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  overflow: visible;
+}
+.snapshot-note {
+  margin-bottom: 1.5rem;
+  padding: 0.7rem 1rem;
+  background: #e4edfb;
+  border-left: 3px solid #3273ed;
+  border-radius: 0 7px 7px 0;
+  color: #263e63;
+}
+.empty-state {
+  margin-top: 1.5rem;
+  padding: 1.3rem 1.4rem;
+  background: #ffffff;
+  border: 1px dashed #aebed4;
+  border-radius: 12px;
+  color: #53647d;
+  line-height: 1.7;
+}
+.risk-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 1rem 0 1.25rem;
+  padding: 1rem 1.2rem;
+  background: #ffffff;
+  border: 1px solid #d8e1ee;
+  border-left-width: 7px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(33, 58, 94, 0.05);
+}
+.risk-banner div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.risk-banner span {
+  color: #63758e;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.risk-banner strong {
+  color: #10213d;
+  font-size: 1.55rem;
+}
+.risk-banner p {
+  margin: 0;
+  color: #334a69;
+}
+.risk-low { border-left-color: #1f9d72; background: #f3fbf7; }
+.risk-medium { border-left-color: #e49a24; background: #fffaf0; }
+.risk-high { border-left-color: #d94b5b; background: #fff6f7; }
+@media (max-width: 700px) {
+  .block-container { padding: 3rem 1rem 1.25rem; }
+  [data-testid="stMetric"] { min-height: 110px; }
+  .risk-banner { align-items: flex-start; flex-direction: column; }
+}

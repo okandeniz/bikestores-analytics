@@ -1,0 +1,18 @@
+[theme]
+base = "light"
+primaryColor = "#2E66C9"
+backgroundColor = "#F4F7FC"
+secondaryBackgroundColor = "#EAF0F9"
+textColor = "#172842"
+linkColor = "#2E66C9"
+borderColor = "#D8E1EE"
+showWidgetBorder = true
+baseRadius = "medium"
+font = "sans-serif"
+
+[server]
+address = "127.0.0.1"
+headless = true
+
+[browser]
+gatherUsageStats = false

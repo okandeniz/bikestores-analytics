@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "model_version": "20260911T003645-badb208c",
+  "trained_at": "2026-09-11T00:36:45.936753+00:00",
+  "selected_model": "XGBoost",
+  "data_start": "2016-01-01",
+  "data_end": "2018-03-01",
+  "forecast_month": "2018-04-01",
+  "training_start": "2016-04-01",
+  "history_rows": 567,
+  "training_rows": 504,
+  "series_count": 21,
+  "added_zero_rows": 97,
+  "features": [
+    "store_id",
+    "category_id",
+    "month",
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "rolling_mean_3",
+    "rolling_mean_6"
+  ],
+  "validation_period": "July\u2013December 2017",
+  "test_period": "January\u2013March 2018",
+  "target": "Recorded completed sales, in units",
+  "horizon": "One month ahead",
+  "data_sha256": "badb208cb0b08b272ab7beee1128ea63c7fd3ec29d1192ade4aa81a5aefc50bf",
+  "versions": {
+    "pandas": "3.0.5",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0"
+  },
+  "notes": [
+    "Missing source rows are zero recorded sales; historical stock availability is unknown.",
+    "Historical completed-sales totals are assumed known before each forecast month.",
+    "Settings were chosen on 2017 validation; the three-month historical test is limited evidence.",
+    "Predictions use the saved data snapshot. Retrain and restart the API after a completed month is added."
+  ]
+}

@@ -1,0 +1,33 @@
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/catboost_info/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Model artifacts
+models/*.pkl
+models/*.joblib
+models/late_shipment_test_samples.json
+
+# Temporary outputs
+outputs/figures/*

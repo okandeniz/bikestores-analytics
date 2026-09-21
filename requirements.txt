@@ -1,0 +1,39 @@
+# Data Analysis
+pandas
+numpy
+scipy
+
+# Database
+SQLAlchemy
+PyMySQL
+python-dotenv
+
+# Excel
+openpyxl
+XlsxWriter
+
+# Visualization / EDA
+matplotlib
+seaborn
+plotly
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+catboost
+mlxtend
+statsmodels
+joblib
+optuna
+
+# Web App
+streamlit
+fastapi
+uvicorn
+requests
+
+# Jupyter
+jupyterlab
+ipykernel
+
